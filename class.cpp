@@ -57,7 +57,7 @@ void        Class::createCpp(void)
         m_myFileWriting << "{" << std::endl;
         m_myFileWriting << "\tif (&rhs == this)" << std::endl;
         m_myFileWriting << "\t\treturn *this;" << std::endl;
-        m_myFileWriting << "\teturn *this;" << std::endl;
+        m_myFileWriting << "\treturn *this;" << std::endl;
         m_myFileWriting << "}" << std::endl;
         m_myFileWriting.close();
     }
